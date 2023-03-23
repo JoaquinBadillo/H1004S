@@ -29,7 +29,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #1E1E1E;
-    font-size: calc(30% + 1vw);
+    font-size: calc(100% + 1vw);
 }
 
 nav a:hover {
