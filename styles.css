@@ -103,6 +103,7 @@ h2 {
     
     .main {
         max-width: 80vw;
+        text-align: center;
     }
 
     .main-container {
