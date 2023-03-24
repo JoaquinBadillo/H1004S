@@ -14,7 +14,7 @@ nav {
 nav > ul {
     list-style: none;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     font-weight: bold;
     padding: 0;
     justify-items: center;
@@ -29,7 +29,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #1E1E1E;
-    font-size: calc(100% + 1vw);
+    font-size: calc(70% + 1vw);
 }
 
 nav a:hover {
@@ -190,6 +190,64 @@ h2 {
 
 #help {
     flex-direction: column;
+    align-items: center;
+}
+
+#help svg {
+    height: 30vh;
+    max-width: 80vw;
+}
+
+.help-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-card {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 4vw;
+}
+
+.help-card p {
+    font-size: 16pt;
+}
+
+@media only screen and (max-width: 805px) {
+    .help-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .help-card {
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0;
+    }
+}
+
+#heart {
+    animation: drop 5s ease 0s infinite;
+}
+
+@keyframes drop {
+    0% {
+        transform: translate(0, 0);
+    }
+    70% {
+        transform: translate(0, 15%);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+
 }
 
 footer {
